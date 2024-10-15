@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Gilroy:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <title>Criar Conta - BetterHope</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <img src="img/logo.png" alt="Logo BetterHope" class="logo"> <!-- Logo aqui -->
+           <h2>Crie sua Conta</h2>
+            <p>Preencha os dados abaixo para criar sua conta.</p>
+
+            <form action="criar_conta.php" method="POST">
+                <div class="form-group">
+                    <label for="username">Nome de Usuário</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm_password">Confirmar Senha</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                </div>
+                
+                <button type="submit" class="btn">Salvar</button>
+            </form>
+
+            <p>Já tem uma conta? <a href="login.html">Faça login aqui</a>.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
