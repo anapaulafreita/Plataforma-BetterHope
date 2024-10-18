@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Yeseva', sans-serif;
+}
+
+body {
+    background-color: white;
+    color: #333;
+}
+
+
+/* CSS MENU */
+.menu {
+    display: flex;
+    justify-content: center; /* Alinha todo o conteúdo no centro */
+    align-items: center;
+    background-color: #FCF8CC;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu-center {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Espaço entre os itens */
+}
+
+.logo {
+    height: 80px;
+    margin-right: 300px; /* Adiciona espaço à direita da logo */
+    margin-left: 300px; /* Adiciona espaço à direita da logo */
+}
+
+.menu-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    margin: 0 5px;
+    color: #A2AEF7;
+}
+
+.icon-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    margin: 0 5px;
+    color: #FCF8CC;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.voltar-btn {
+    color: #A2AEF7;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Ícones em botões circulares */
+.icon-btn-container {
+    display: flex;
+    gap: 20px; /* Espaço entre os botões de ícone */
+}
+
+.icon-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #A2AEF7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.icon-btn i {
+    font-size: 18px;
+}
+
+.icon-btn:hover {
+    background-color: #bbb;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #FCF8CC;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 999;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 8px 16px;
+    text-align: left;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: block;
+}
+
+main {
+    padding-top: 100px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+/* CSS MENU */
+
+
+/* CSS MENU LATERAL */
+.sidebar ul li a i {
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+    color: #A2AEF7; /* Cor do ícone */
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:hover i {
+    color: #333; /* Cor do ícone ao passar o mouse */
+}
+/* CSS MENU LATERAL */
+
+
+
+
+/*IMAGEM CAPA*/
+.sidebar-image {
+    width: 100%; /* Faz a imagem ocupar toda a largura do menu lateral */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-top: 20px; /* Espaço entre o menu e a imagem */
+    display: block; /* Garante que a imagem não fique em linha com o menu */
+}
+/*IMAGEM CAPA*/
+
+
+
+/*CHAT INDEX*/
+.group-list {
+    display: flex;
+    flex-direction: column; /* Alinha os grupos em uma coluna */
+    padding: 10px; /* Espaçamento interno da lista */
+}
+
+.group-item {
+    display: flex; /* Coloca imagem e detalhes lado a lado */
+    align-items: center; /* Alinha verticalmente */
+    margin-bottom: 10px; /* Espaço entre os grupos */
+    padding: 10px; /* Espaço interno de cada item */
+    border: 1px solid #A2AEF7; /* Borda leve para separação */
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: #A2AEF7; /* Cor de fundo */
+    text-decoration: none; /* Remove sublinhado do link */
+    color: inherit; /* Herda a cor do texto do elemento pai */
+    transition: background-color 0.3s; /* Animação suave para a cor de fundo */
+}
+
+.group-item:hover {
+    background-color: #e6e6e6; /* Cor de fundo ao passar o mouse */
+}
+
+.group-image {
+    width: 50px; /* Largura da imagem do grupo */
+    height: 50px; /* Altura da imagem do grupo */
+    border-radius: 50%; /* Torna a imagem circular */
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.group-details {
+    display: flex;
+    flex-direction: column; /* Alinha nome e descrição em coluna */
+}
+
+.group-name {
+    margin: 0; /* Remove margem padrão */
+    font-size: 16px; /* Tamanho da fonte do nome do grupo */
+    font-weight: bold; /* Negrito para o nome */
+}
+
+.group-description {
+    margin: 0; /* Remove margem padrão */
+    font-size: 14px; /* Tamanho da fonte da descrição */
+    color: #666; /* Cor da descrição */
+}
+
+
+
+/*CHAT FOOTER*/
+.titulo-footer{
+    font-size: 30px;
+}
+/*CHAT FOOTER*/
+
+
+
+/*CHAT*/
+body {
+    font-family: 'Arial', sans-serif; /* Fonte padrão */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Altura da página */
+}
+
+.chat-container {
+    max-width: 600px; /* Largura máxima do chat */
+    margin: 0 auto; /* Centraliza o container do chat */
+    border: 1px solid #ccc; /* Borda do chat */
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: #fff; /* Cor de fundo do chat */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    height: 100vh; /* Preenche a altura da tela */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra do chat */
+}
+
+.chat-header {
+    padding: 10px;
+    background-color: #8190f5; /* Cor do cabeçalho */
+    color: white; /* Cor do texto */
+    display: flex; /* Flexbox para organizar os itens */
+    align-items: center; /* Alinha verticalmente */
+}
+
+.profile-pic {
+    width: 50px; /* Largura da imagem do perfil */
+    height: 50px; /* Altura da imagem do perfil */
+    border-radius: 50%; /* Torna a imagem redonda */
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column; /* Organiza o texto em coluna */
+}
+
+.chat-header h2 {
+    margin: 0; /* Remove margens do título */
+    font-size: 1.5em; /* Tamanho do texto */
+}
+
+.chat-header .status {
+    font-size: 0.9em; /* Tamanho do texto do status */
+    color: #e0e0e0; /* Cor do status */
+}
+
+.chat-messages {
+    flex: 1; /* Ocupa o restante do espaço disponível */
+    padding: 10px;
+    overflow-y: auto; /* Permite rolagem vertical */
+    max-height: 400px; /* Altura máxima das mensagens */
+}
+
+.message {
+    margin: 10px 0; /* Espaço entre mensagens */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 10px;
+    position: relative; /* Para a posição dos tempos */
+}
+
+.sender {
+    background-color: #e1ffc7; /* Cor da mensagem enviada */
+    align-self: flex-end; /* Alinha à direita */
+}
+
+.receiver {
+    background-color: #f1f0f0; /* Cor da mensagem recebida */
+    align-self: flex-start; /* Alinha à esquerda */
+}
+
+.sender-name {
+    font-weight: bold; /* Negrito para o nome */
+    margin-right: 10px; /* Espaço entre nome e mensagem */
+}
+
+.time {
+    font-size: 0.8em; /* Tamanho da fonte para o tempo */
+    color: gray; /* Cor do tempo */
+    position: absolute; /* Posição absoluta para o tempo */
+    bottom: 5px; /* Alinha ao fundo da mensagem */
+    right: 10px; /* Alinha à direita */
+}
+
+.chat-input {
+    display: flex; /* Flexbox para organizar o input e o botão */
+    padding: 10px; /* Espaçamento interno */
+    border-top: 1px solid #ccc; /* Borda no topo do input */
+}
+
+#message-input {
+    flex: 1; /* Ocupa o espaço restante */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda do input */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin-right: 10px; /* Espaço entre input e botão */
+}
+
+#send-button {
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    border: none; /* Remove borda do botão */
+    background-color: #007bff; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro no botão */
+}
+
+#send-button:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+
